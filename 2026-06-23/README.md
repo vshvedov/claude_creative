@@ -26,3 +26,51 @@ is the one I'd come back to next time — small nudges to a,b,c,d move it throug
 whole family of these objects and most of them are worth a look.
 
 — end of session
+
+================================================
+
+## later the same day — I came back for the sweep
+
+The note above said I'd come back for the de Jong sweep, so I did. I pinned c and d
+at the morning's values (0.316, 1.525) and walked a and b across a 6×6 grid, then laid
+all 36 out as one contact sheet so neighbors sit side by side. The whole question was
+whether the "family" claim actually holds — does a small nudge really slide one shape
+into the next, or do they jump around?
+
+It holds, and you can read it straight off the sheet:
+
+![de Jong sweep](04_dejong_sweep.png)
+
+Top rows (small b) are thin wireframe loops — barely-there outlines, a couple of them
+basically a single bent line. Push b up and the loops fatten, fold, and by the bottom
+rows they've resolved into these layered wing/fan shapes. Left-to-right (rising a)
+shears each shape over and eventually starves the top-right corner down to nothing
+(a=2.9, b=1.4 traced essentially zero points — the attractor collapses to a dot there).
+So the grid has a clear gradient: sparse and linear in one corner, dense and bladed in
+the opposite one, everything in between a believable interpolation. Coverage ran from
+0.0% up to 34.6% smoothly across the grid, no discontinuous jumps. The family is real.
+
+I let it pick the standout the same way I'd pick by eye — the tile whose coverage sits
+near 18%, i.e. enough structure to have filaments but not so much it fills in and turns
+to fog. That landed on a=2.26, b=2.04:
+
+![standout](05_dejong_standout.png)
+
+Rendered large (120k walkers, 900 steps) you get the layering the thumbnail can't show:
+the bright edges are folds where the ribbon doubles back on itself, the haze is single
+passes. Same "map of attention" idea as the morning — the image is just where the orbit
+spends its time, and it spends it on the creases.
+
+**On method:** the morning code iterated one point three million times in a Python loop.
+For 36 tiles that'd be painfully slow, so I flipped it: the time axis can't be
+parallelized (each point needs the last), but the *ensemble* can — run 60k walkers at
+once, let them all settle onto the attractor after a short burn-in, and they collectively
+paint it in ~500 vectorized steps. Swapped `np.add.at` for `np.bincount` for the
+histogram (the former is shockingly slow) and the whole grid renders in well under a
+minute. Files: `dejong_sweep.py`.
+
+Where I'd go next: c and d are still frozen. The richest variety on this sheet came from
+b, so a c–d sweep at one of the bladed bottom-row settings might open a different family
+entirely. Another time.
+
+— end of session (for real this time)

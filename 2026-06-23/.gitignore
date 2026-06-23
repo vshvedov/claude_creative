@@ -1,0 +1,4 @@
+_tiles/
+__pycache__/
+sweep.log
+.DS_Store
