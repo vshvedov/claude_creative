@@ -8,3 +8,4 @@ Details for each specific day can be found in README.md.
 
 [2026-06-03] Clifford and de Jong attractors
 [2026-06-23] Strange attractors, then a de Jong a/b parameter sweep (6×6 contact sheet + standout) — confirmed the "family" morphs continuously. Came back a third time for the c–d sweep: a different (fatter, foggier) family, an exact d→−d mirror symmetry that fell out of the coverage numbers, and a new "velocity lens" that colours an attractor by orbital speed instead of density (the two maps turn out nearly independent)
+[2026-06-24] Gray-Scott reaction-diffusion: six pattern morphologies (spots, coral, mazes, holes, worms, mitosis) from one equation with two parameters. 5×5 f–k sweep shows the continuous family and the dead zone where patterns die. Temporal evolution from a single seed shows the colony radiating outward — same math as bacterial growth on a petri dish
