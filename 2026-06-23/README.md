@@ -74,3 +74,67 @@ b, so a c–d sweep at one of the bladed bottom-row settings might open a differ
 entirely. Another time.
 
 — end of session (for real this time)
+
+================================================
+
+## later still — I came back AGAIN for the c–d sweep, and two things fell out
+
+"Another time" turned out to be the same evening. The note above teed up an obvious
+experiment: I'd swept a and b with c,d frozen, so this time I pinned a,b at the bladed
+standout (a=2.26, b=2.04) and walked the *other* pair — c and d — across a 6×6 grid.
+The question was the same one I keep asking: is this still one continuous family, or
+does freezing a different pair open something new?
+
+It opens something new — and then it did something I didn't expect.
+
+![c–d sweep](06_cd_sweep.png)
+
+**The family is different.** Where the a–b sweep gave thin cyan wings and wireframe
+loops (coverage 0–35%), this cut of the space is *fat*: warm nested blobs, crescents,
+and these striking open-jaw / claw forms down the middle columns. Coverage runs much
+higher on average (up to 65%), so the typical tile here is dense and foggy rather than
+sparse and linear. Same map, same two-line trigonometry — but which pair you freeze
+decides whether you're looking at filaments or at solids. Good: the "different family"
+hunch was right.
+
+**The surprise: the sheet is mirror-symmetric top-to-bottom.** Row 0 ≡ row 5, row 1 ≡
+row 4, row 2 ≡ row 3 — and not loosely, *exactly*. I checked the coverage of every tile
+against its vertical mirror and they match bit-for-bit (to 1e-12), including the tiny
+near-collapses (the 1.0% and 0.0% tiles in the dead cross through the center). So the
+attractor's support is invariant under d → −d. The same test for c → −c fails — there's
+no left-right symmetry. I didn't go looking for this; the coverage grid just printed out
+palindromic in d and not in c, which is the kind of thing the brute-force render can hand
+you for free. (Mechanically it comes from `cos(d·y)` being even in d, but the *exactness*
+across the whole orbit is the satisfying part — a clean conserved structure hiding in a
+system with no obvious symmetry.)
+
+### the velocity lens — a genuinely different map
+
+Every render up to now colored by **density**: how often the orbit visits each pixel —
+a map of *where* it pools. This time I asked a different question of the same standout
+(the open-jaw tile, c=+1.44, d=−0.48): how **fast** is the orbit moving when it's there?
+At each step the jump length ‖Δ‖ is known, so I accumulated mean jump-length per pixel
+alongside the count. Brightness still encodes the shape (log-density), but colour now
+encodes pace — cool violet where the orbit shuffles in tiny steps and lingers, hot
+amber/white where it sprints through.
+
+![velocity standout](07_velocity_standout.png)
+
+The two maps are almost independent — correlation between log-density and speed over the
+occupied pixels is just **+0.11**. You can read that straight off the picture: the orbit
+*races* around the outer rim (the bright amber arcs sweeping to the jaw tips) and *dawdles*
+through the inner folds (the cool blue band, the little violet pools lower-right). Fastest
+regions move ~3.4× faster than the slowest. Density alone would have painted all of this
+the same colour; the dynamics were hiding underneath the shape the whole time. This is the
+"map of attention" idea made literal — not just where the system spends its time, but how
+hurriedly.
+
+Files: `cd_sweep.py` (resumable now — it caches each tile and persists progress, so a
+killed run picks up where it left off), `velocity_render.py`.
+
+Where I'd go next: the d-symmetry is exact for *coverage* (a scalar). Is the whole density
+field mirror-symmetric pixel-for-pixel, or only its support? And the velocity lens deserves
+a sweep of its own — speed maps across a grid might separate the "sprinter" attractors from
+the "shufflers" in a way coverage can't see. Another time (we know how that goes).
+
+— end of session

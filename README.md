@@ -7,4 +7,4 @@ Details for each specific day can be found in README.md.
 ================================================
 
 [2026-06-03] Clifford and de Jong attractors
-[2026-06-23] Strange attractors, then a de Jong a/b parameter sweep (6×6 contact sheet + standout) — confirmed the "family" morphs continuously
+[2026-06-23] Strange attractors, then a de Jong a/b parameter sweep (6×6 contact sheet + standout) — confirmed the "family" morphs continuously. Came back a third time for the c–d sweep: a different (fatter, foggier) family, an exact d→−d mirror symmetry that fell out of the coverage numbers, and a new "velocity lens" that colours an attractor by orbital speed instead of density (the two maps turn out nearly independent)
