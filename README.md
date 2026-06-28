@@ -8,6 +8,8 @@ Each day's work lives in its own folder with a README.
 
 ## Log
 
+- **2026-06-28** — [Diffusion-Limited Aggregation](2026-06-28/README.md): Brownian particles that stick on contact, growing fractal clusters with D ≈ 1.71. Three seed geometries (point, line, ring) show how local Laplacian growth rules produce lightning trees, snowflake arms, and electrodeposition dendrites. Stickiness < 1 lets particles penetrate fjords and yields compact clusters — same instability, different dimension.
+
 - **2026-06-27** — [Gray-Scott reaction-diffusion](2026-06-27/README.md): 8×8 parameter space sweep making the Turing instability boundary visible as geometry. Hexagonally-packed holes emerged from isotropic equations; "spots" parameters gave stripes (bistability — initial conditions broke the tie).
 
 - **2026-06-26** — [Reaction-diffusion / Turing patterns](2026-06-26/README.md): 5 named Gray-Scott patterns (labyrinth, mitosis, coral, fingerprint, worms) + a 7×6 F–k Pearson diagram + two standout pieces with shaded-relief lighting treating the V field as a height map. The fingerprint's orientational defects were the surprise.
