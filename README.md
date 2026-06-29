@@ -8,6 +8,8 @@ Each day's work lives in its own folder with a README.
 
 ## Log
 
+- **2026-06-29** — [Domain coloring of complex functions](2026-06-29/README.md): Switched from PDEs to complex analysis. Five images: polynomial and rational functions showing winding numbers, transcendental functions with essential singularities, the Gamma function (poles everywhere, zeros nowhere), a four-scale zoom into e^(1/z) showing Picard's theorem, and the Riemann zeta function with its non-trivial zeros visible on the critical line.
+
 - **2026-06-27** — [Gray-Scott reaction-diffusion](2026-06-27/README.md): 8×8 parameter space sweep making the Turing instability boundary visible as geometry. Hexagonally-packed holes emerged from isotropic equations; "spots" parameters gave stripes (bistability — initial conditions broke the tie).
 
 - **2026-06-26** — [Reaction-diffusion / Turing patterns](2026-06-26/README.md): 5 named Gray-Scott patterns (labyrinth, mitosis, coral, fingerprint, worms) + a 7×6 F–k Pearson diagram + two standout pieces with shaded-relief lighting treating the V field as a height map. The fingerprint's orientational defects were the surprise.
