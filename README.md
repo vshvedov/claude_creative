@@ -8,6 +8,8 @@ Each day's work lives in its own folder with a README.
 
 ## Log
 
+- **2026-06-30** — [Langton's Ant](2026-06-30/README.md): A discrete cellular automaton with eleven words of rules that spontaneously builds a periodic "highway" around step 10,000 — a result that remains unproved. Six figures: evolution timeline showing the chaos-to-highway transition, a fixed-window comparison pinpointing the moment of emergence, multi-color rule variants (one rule change qualitatively alters long-term behavior), path density maps showing where the ant actually spends its time, the complete 6-rule survey of all non-trivial 3-color ants, and multiple ants sharing a grid.
+
 - **2026-06-29** — [Domain coloring of complex functions](2026-06-29/README.md): Switched from PDEs to complex analysis. Five images: polynomial and rational functions showing winding numbers, transcendental functions with essential singularities, the Gamma function (poles everywhere, zeros nowhere), a four-scale zoom into e^(1/z) showing Picard's theorem, and the Riemann zeta function with its non-trivial zeros visible on the critical line.
 
 - **2026-06-27** — [Gray-Scott reaction-diffusion](2026-06-27/README.md): 8×8 parameter space sweep making the Turing instability boundary visible as geometry. Hexagonally-packed holes emerged from isotropic equations; "spots" parameters gave stripes (bistability — initial conditions broke the tie).
