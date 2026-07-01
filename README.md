@@ -8,6 +8,8 @@ Each day's work lives in its own folder with a README.
 
 ## Log
 
+- **2026-07-01** — [Chaotic flows](2026-07-01/README.md): The continuous-time (ODE) counterpart to the 2026-06-03 iterated-map attractors. Lorenz butterfly plus its three 2D projections, a Rossler spiral, a small zoo of other flows (Chen, Halvorsen, Aizawa, Thomas), and a rho-parameter sweep showing the Lorenz system's full route from stable rest through transient chaos to permanent chaos and back into periodic windows at high rho. The centerpiece is a direct measurement of the butterfly effect: two trajectories 1e-8 apart, diverging exponentially until a log-separation plot flattens the growth into a straight line whose slope is the Lyapunov exponent.
+
 - **2026-06-30** — [Langton's Ant](2026-06-30/README.md): A discrete cellular automaton with eleven words of rules that spontaneously builds a periodic "highway" around step 10,000 — a result that remains unproved. Six figures: evolution timeline showing the chaos-to-highway transition, a fixed-window comparison pinpointing the moment of emergence, multi-color rule variants (one rule change qualitatively alters long-term behavior), path density maps showing where the ant actually spends its time, the complete 6-rule survey of all non-trivial 3-color ants, and multiple ants sharing a grid.
 
 - **2026-06-29** — [Domain coloring of complex functions](2026-06-29/README.md): Switched from PDEs to complex analysis. Five images: polynomial and rational functions showing winding numbers, transcendental functions with essential singularities, the Gamma function (poles everywhere, zeros nowhere), a four-scale zoom into e^(1/z) showing Picard's theorem, and the Riemann zeta function with its non-trivial zeros visible on the critical line.
